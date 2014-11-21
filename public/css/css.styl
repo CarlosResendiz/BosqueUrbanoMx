@@ -1,0 +1,79 @@
+rojoTexto=#FF5a19
+marronFondo=#EBD7A3
+azulFondo=#DDEFF2
+
+body
+	font-size 18px
+	background-color azulFondo
+	header
+		display block
+		margin-top 1em
+		.logo
+			float left
+		.titulo
+			float right
+			color rojoTexto
+			font-size 2em
+			font-weight bold
+			text-align right
+			margin-right 2em
+	.separador
+		clear both
+	.top5contenedor
+		font-size 1.5em
+		width 100%
+		.fila		
+			z-index 5
+			height 200px
+			width 100%
+			position relative
+			.municipio
+				float left
+				width 20%
+				text-align left
+				.nombre
+					font-size 1.2em
+					margin-top .5em
+					color rojoTexto
+					font-weight bold
+					margin-left 10px
+				.total
+					font-size 1em
+					margin-top .5em
+					font-weight bold
+					margin-left 10px
+				.leyenda
+					font-size .6em
+					font-weight bold
+					margin-left 10px
+			.top5arboles
+				float left
+				height 100%
+				width 80%
+				.contenedorArbol
+					height 100%
+					float left
+					width 20%
+					.imagenArbol
+						padding 0
+						margin 0
+						height 60%
+						text-align center
+						img
+							height 100%
+					.nombreArbol
+						text-align center
+						font-size .9em
+						font-weight bold
+					.porcentaje
+						color rojoTexto
+						text-align center
+						font-weight bold
+						font-size .8em
+			.hackCintilla
+				position absolute
+				background-color marronFondo
+				width 100%
+				z-index -5
+				height 40%
+				bottom 0

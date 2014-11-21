@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="arbolesPorMunicipio">
+<head>
+	<meta charset="UTF-8">
+	<title>Top 5 Especies Plantadas</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css" media="screen" />
+</head>
+<body>
+	<header>
+		<figure class="logo">
+			<img src="/imagenes/logo_bum.jpg" alt="">
+		</figure>
+		<div class="titulo">	
+			ESPECIES<br/>MÁS PLANTADAS
+		</div>
+	</header>
+	<div class="separador"></div>
+	<div class="top5contenedor" ng-controller="ArbolesController as arblctrl">
+		<div class="fila" ng-repeat="municipio in arblctrl.municipios">
+			<div class="municipio">
+				<div class="nombre">
+					{{municipio.nombre}}
+				</div>
+				<div class="total">
+					{{municipio.total |  number:0}}
+				</div>
+				<div class="leyenda">
+					Total de arboles registrados
+				</div>
+				<div class="cintilla">
+				</div>
+			</div>
+			<div class="top5arboles">
+				<div class="contenedorArbol" ng-repeat="arbol in municipio.arboles">
+					<figure class="imagenArbol">
+					<img src="{{arbol.nombreArbol | imagenArbol}}" alt="">
+					</figure>
+					<div class="nombreArbol">
+						{{arbol.nombreArbol}}
+					</div>
+					<div class="porcentaje">
+						{{arbol.porcentaje | porcentajeTotal}}
+					</div>
+				</div>
+			</div>
+			<div class="hackCintilla"></div>
+		</div>
+	</div>
+	 <!-- <script src="js/vendors/underscore-min.js"></script>-->
+    <script src="js/vendors/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <!--<script src="js/vendors/angular-route.min.js"></script>-->
+</body>
+</html>

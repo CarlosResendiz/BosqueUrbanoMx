@@ -1,0 +1,34 @@
+[
+{
+	municipio:'Monterrey',
+	totalArbolesRegistrados:3980
+	arboles[
+		{
+			nombreArbol:'Encino Siempre Verde',
+			imagen:'alamo_de_rio',
+			porcentaje:80
+		},
+		{
+			nombreArbol:'Encino Rojo',
+			imagen:'alamo_de_rio',
+			porcentaje:20
+		},
+		{
+			nombreArbol:'Encino Roble',
+			imagen:'alamo_de_rio',
+			porcentaje:10
+		},
+		{
+			nombreArbol:'Alamo del rio',
+			imagen:'alamo_de_rio',
+			porcentaje:5
+		},
+		{
+			nombreArbol:'Ebano',
+			imagen:'alamo_de_rio',
+			porcentaje:5
+		}
+	]
+
+}
+]

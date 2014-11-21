@@ -1,0 +1,93 @@
+body {
+  font-size: 18px;
+  background-color: #ddeff2;
+}
+body header {
+  display: block;
+  margin-top: 1em;
+}
+body header .logo {
+  float: left;
+}
+body header .titulo {
+  float: right;
+  color: #ff5a19;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 2em;
+}
+body .separador {
+  clear: both;
+}
+body .top5contenedor {
+  font-size: 1.5em;
+  width: 100%;
+}
+body .top5contenedor .fila {
+  z-index: 5;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+body .top5contenedor .fila .municipio {
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+body .top5contenedor .fila .municipio .nombre {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  color: #ff5a19;
+  font-weight: bold;
+  margin-left: 10px;
+}
+body .top5contenedor .fila .municipio .total {
+  font-size: 1em;
+  margin-top: 0.5em;
+  font-weight: bold;
+  margin-left: 10px;
+}
+body .top5contenedor .fila .municipio .leyenda {
+  font-size: 0.6em;
+  font-weight: bold;
+  margin-left: 10px;
+}
+body .top5contenedor .fila .top5arboles {
+  float: left;
+  height: 100%;
+  width: 80%;
+}
+body .top5contenedor .fila .top5arboles .contenedorArbol {
+  height: 100%;
+  float: left;
+  width: 20%;
+}
+body .top5contenedor .fila .top5arboles .contenedorArbol .imagenArbol {
+  padding: 0;
+  margin: 0;
+  height: 60%;
+  text-align: center;
+}
+body .top5contenedor .fila .top5arboles .contenedorArbol .imagenArbol img {
+  height: 100%;
+}
+body .top5contenedor .fila .top5arboles .contenedorArbol .nombreArbol {
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+body .top5contenedor .fila .top5arboles .contenedorArbol .porcentaje {
+  color: #ff5a19;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+body .top5contenedor .fila .hackCintilla {
+  position: absolute;
+  background-color: #ebd7a3;
+  width: 100%;
+  z-index: -5;
+  height: 40%;
+  bottom: 0;
+}
